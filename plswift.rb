@@ -1,4 +1,4 @@
-class PLSwift < Formula
+class Plswift < Formula
 
   desc "Bringing Swift to the Backend of the Backend's Backend!"
   homepage "https://github.com/PL-Swift"
