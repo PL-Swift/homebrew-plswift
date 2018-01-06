@@ -34,22 +34,31 @@ Add the PL/Swift tap and install plswift:
     brew tap PL-Swift/plswift
     brew install plswift
 
+
 ## Check whether the installation is OK:
 
 You can call `swift pl validate` to make sure the installation is OK:
 
-    $ swift pl validate
-    The Swift Apache build environment looks sound.
+    The Swift PostgreSQL build environment looks sound.
     
-    srcroot:   /Users/helge/dev/Swift/Apex3
-    module:    mods_Apex3
-    config:    debug
-    product:   /Users/helge/dev/Swift/Apex3/.build/mods_Apex3.so
-    apxs:      /usr/local/bin/apxs
-    mod_swift: /usr/local
-    swift:     3.1.0
-    cert:      self-signed-mod_swift-localhost-server.crt
-    http/2:    yes
+      srcroot:   /Users/helge/dev/Swift/PLSwift/PLSwift
+      module:    PLSwift
+      config:    debug
+      product:   /Users/helge/dev/Swift/PLSwift/PLSwift/.build/PLSwift.so
+      version:   
+      sql-setup: 
+      pg_config: /Applications/Postgres.app/Contents/Versions/9.4/bin/pg_config
+      moddir:    /Applications/Postgres.app/Contents/Versions/9.4/lib/postgresql
+      extdir:    /Applications/Postgres.app/Contents/Versions/9.4/share/postgresql/extension/
+      PL/Swift:  /usr/local
+      swift:     4.0.3
+    
+    ERROR: Missing extension control file: PLSwift.control
+    ERROR: Missing setup file: 
+
+(you can ignore the ERRORs at the bottom, they are only relevant within
+ extensions)
+
 
 ### Who
 
